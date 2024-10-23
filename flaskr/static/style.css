@@ -1,0 +1,62 @@
+/* Style général du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Style du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Style des en-têtes */
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Style des cellules */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Alternance de couleur pour les lignes */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style au survol des lignes */
+tr:hover {
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
+
+/* Ajout de bordure arrondie au tableau */
+table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Rendre les colonnes plus compactes et ajustées */
+th, td {
+    word-wrap: break-word;
+}
+
+/* Style pour les en-têtes de tableau */
+thead {
+    border-bottom: 2px solid #4CAF50;
+}
+
+/* Rendre le texte en gras dans les en-têtes */
+th {
+    font-weight: bold;
+}

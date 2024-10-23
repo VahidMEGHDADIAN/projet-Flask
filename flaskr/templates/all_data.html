@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+   <title> all-data - All tables </title>
+   <link href="{{ url_for('static', filename='style.css') }}"" rel="stylesheet"/>
+</head>
+<body>
+   <section class="content">
+      <table justify="center">
+         <thead>
+            <tr>
+               <th scope="col">Invoice n°</th>
+               <th scope="col">Date</th>
+               <th scope="col">Country</th>
+               <th scope="col">Quantity</th>
+               <th scope="col">Price</th>
+               <th scope="col">Description</th>
+            </tr>
+         </thead>
+         <tbody>
+            {% for row in data %}
+            <tr>
+               <th scope="row"> {{ row['invoice_nb'] }} </th>
+               <td> {{ row['invoice_date'] }} </td>
+               <td> {{ row['country'] }} </td>
+               <td> {{ row['quantity'] }} </td>
+               <td> {{ row['price'] }} </td>
+               <td> {{ row['description'] }} </td>
+            </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+   </section>
+</body>
+</html>
